@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+int   n, n1,n2;
+	
+	   int od;
+	
+	cin >> n;
+	n1 = 0;
+	n2 = 0;
+	int* m = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		cout << "enter " << i << "       ";
+		
+		cin >> m[i];
+		cout << endl;
+	}
+	cout<< endl;
+
+	for (int i = 0; i < n; i++)
+	{
+
+		cout << m[i] << "\t";
+	}
+	cout << endl;
+
+	for (int j = 1; j < n; j++)
+	{
+	for (int i = 0; i < j; i++)
+		{
+
+		if (m[i] == m[j])
+			{
+		n1 = i;
+		n2 = j;
+			}
+
+		}
+		
+	}
+	
+	cout<< n1<<","<<n2;
+}
